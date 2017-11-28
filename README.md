@@ -1,2 +1,3 @@
-# hello_world
-Algorithm to exclude possible orbital periods of a ringed substellar companion
+# Excluding Periods
+Algorithm to exclude possible orbital periods of the ringed substellar companion J1407b
+

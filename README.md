@@ -1,5 +1,5 @@
 # Excluding Periods
-// Algorithm to exclude possible orbital periods of the ringed substellar companion J1407b
+Algorithm to exclude possible orbital periods of the ringed substellar companion J1407b
 
 This is a script to exclude possible orbital periods of the ringed companion of the the young star J1407. A detailed description can be found in Kenworthy and Mentel et. al. (2017, in preparation).
 

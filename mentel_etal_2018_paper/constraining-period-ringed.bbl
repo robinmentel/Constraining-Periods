@@ -1,0 +1,151 @@
+\begin{thebibliography}{32}
+\expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
+
+\bibitem[{{Armitage}(2011)}]{Armitage11}
+{Armitage}, P.~J. 2011, \araa, 49, 195
+
+\bibitem[{{Astropy Collaboration} {et~al.}(2013){Astropy Collaboration},
+  {Robitaille}, {Tollerud}, {Greenfield}, {Droettboom}, {Bray}, {Aldcroft},
+  {Davis}, {Ginsburg}, {Price-Whelan}, {Kerzendorf}, {Conley}, {Crighton},
+  {Barbary}, {Muna}, {Ferguson}, {Grollier}, {Parikh}, {Nair}, {Unther},
+  {Deil}, {Woillez}, {Conseil}, {Kramer}, {Turner}, {Singer}, {Fox}, {Weaver},
+  {Zabalza}, {Edwards}, {Azalee Bostroem}, {Burke}, {Casey}, {Crawford},
+  {Dencheva}, {Ely}, {Jenness}, {Labrie}, {Lim}, {Pierfederici}, {Pontzen},
+  {Ptak}, {Refsdal}, {Servillat}, \& {Streicher}}]{2013A&A...558A..33A}
+{Astropy Collaboration}, {Robitaille}, T.~P., {Tollerud}, E.~J., {et~al.} 2013,
+  \aap, 558, A33
+
+\bibitem[{{Butters} {et~al.}(2010){Butters}, {West}, {Anderson}, {Clarkson},
+  {Enoch}, {Hellier}, {Horne}, {Joshi}, {Lister}, {Maxted}, {Pollacco},
+  {Smalley}, {Street}, {Wheatley}, \& {Wilson}}]{Butters10}
+{Butters}, O.~W., {West}, R.~G., {Anderson}, D.~R. and·~{Collier Cameron}, A.,
+  {et~al.} 2010, \aap, 520, L10
+
+\bibitem[{{Canup} \& {Ward}(2002)}]{Canup02}
+{Canup}, R.~M. \& {Ward}, W.~R. 2002, \aj, 124, 3404
+
+\bibitem[{{de Zeeuw} {et~al.}(1999){de Zeeuw}, {Hoogerwerf}, {de Bruijne},
+  {Brown}, \& {Blaauw}}]{deZeeuw99}
+{de Zeeuw}, P.~T., {Hoogerwerf}, R., {de Bruijne}, J.~H.~J., {Brown}, A.~G.~A.,
+  \& {Blaauw}, A. 1999, The Astronomical Journal, 117, 354
+
+\bibitem[{{Gagné} {et~al.}(2018){Gagné}, {Mamajek}, {Malo}, {Riedel},
+  {Rodriguez}, {Lafrenière}, {Faherty}, {Roy-Loubier}, {Pueyo}, {Robin}, \&
+  {Doyon}}]{Gagne18}
+{Gagné}, J., {Mamajek}, E.~E., {Malo}, L., {et~al.} 2018, \apj, 856, 23
+
+\bibitem[{{Gaia Collaboration} \& {Prusti}(2016)}]{Gaia16}
+{Gaia Collaboration} \& {Prusti}, T. 2016, \aap, 595, L10
+
+\bibitem[{{Gaia Collaoration} {et~al.}(2018){Gaia Collaoration}, {Brown},
+  {Vallenari}, {Prusti}, {de Bruijne}, {Babusiaux}, \& {Bailer-Jones}}]{Gaia18}
+{Gaia Collaoration}, {Brown}, A.~G.~A., {Vallenari}, A., {et~al.} 2018, A\&A
+
+\bibitem[{{Heller} {et~al.}(2014){Heller}, {Williams}, {Kipping}, {Limbach},
+  {Turner}, {Greenberg}, {Sasaki}, {Bolmont}, {Grasset}, {Lewis}, {Barnes}, \&
+  {Zuluaga}}]{Heller14b}
+{Heller}, R., {Williams}, D., {Kipping}, D., {et~al.} 2014, Astrobiology, 14,
+  798
+
+\bibitem[{{Hudec} {et~al.}(2013){Hudec}, {Ba{\v s}ta}, {Pihajoki}, \&
+  {Valtonen}}]{Hudec13}
+{Hudec}, R., {Ba{\v s}ta}, M., {Pihajoki}, P., \& {Valtonen}, M. 2013, \aap,
+  559, A20
+
+\bibitem[{{Hudec} \& {Wenzel}(1976)}]{Hudec76}
+{Hudec}, R. \& {Wenzel}, W. 1976, Bulletin of the Astronomical Institutes of
+  Czechoslovakia, 27, 325
+
+\bibitem[{{Kenworthy} {et~al.}(2015){Kenworthy}, {Lacour}, {Kraus}, {Triaud},
+  {Scott}, {S{\'e}gransan}, {Hambsch}, {Reichart}, {LaCluyze}, \&
+  {Moore}}]{Kenworthy15}
+{Kenworthy}, M.~A., {Lacour}, S., {Kraus}, A., {et~al.} 2015, \mnras, 446, 411
+
+\bibitem[{{Kenworthy} \& {Mamajek}(2015)}]{Kenworthy15b}
+{Kenworthy}, M.~A. \& {Mamajek}, E.~E. 2015, \apj, 800, 126
+
+\bibitem[{{Kipping} {et~al.}(2012){Kipping}, {Bakos}, {Buchhave},
+  {Nesvorn{\'y}}, \& {Schmitt}}]{Kipping12}
+{Kipping}, D.~M., {Bakos}, G.~{\'A}., {Buchhave}, L., {Nesvorn{\'y}}, D., \&
+  {Schmitt}, A. 2012, \apj, 750, 115
+
+\bibitem[{{Kley} \& {Nelson}(2012)}]{Kley12}
+{Kley}, W. \& {Nelson}, R.~P. 2012, \araa, 50, 211
+
+\bibitem[{{Magni} \& {Coradini}(2004)}]{Magni04}
+{Magni}, G. \& {Coradini}, A. 2004, \planss, 52, 343
+
+\bibitem[{{Mamajek} {et~al.}(2012){Mamajek}, {Quillen}, {Pecaut}, {Scott},
+  {Kenworthy}, \& {Parley}}]{Mamajek12}
+{Mamajek}, E.~E., {Quillen}, A.~C., {Pecaut}, M.~J. and·~{Moolekamp}, F.,
+  {et~al.} 2012, \aj, 143, 72
+
+\bibitem[{{Pecaut} \& {Mamajek}(2016)}]{Pecaut16}
+{Pecaut}, M.~J. \& {Mamajek}, E.~E. 2016, \mnras, 461, 794
+
+\bibitem[{{Pepper} {et~al.}(2012){Pepper}, {Kuhn}, {Siverd}, {James}, \&
+  {Stassun}}]{Pepper12}
+{Pepper}, J., {Kuhn}, R.~B., {Siverd}, R., {James}, D., \& {Stassun}, K. 2012,
+  \pasp, 124, 230
+
+\bibitem[{{Pepper} {et~al.}(2007){Pepper}, {Pogge}, {DePoy}, {Marshall},
+  {Stanek}, {Stutz}, {Poindexter}, {Siverd}, {O'Brien}, {Trueblood}, \&
+  {Trueblood}}]{Pepper07}
+{Pepper}, J., {Pogge}, R.~W., {DePoy}, D.~L., {et~al.} 2007, \pasp, 119, 923
+
+\bibitem[{{Peters} \& {Turner}(2013)}]{Peters13}
+{Peters}, M.~A. \& {Turner}, E.~L. 2013, \apj, 769, 98
+
+\bibitem[{{Pollacco} {et~al.}(2006){Pollacco}, {Skillen}, {Collier Cameron},
+  {Christian}, {Hellier}, {Irwin}, {Lister}, {Street}, {West}, {Anderson},
+  {Clarkson}, {Deeg}, {Enoch}, {Evans}, {Fitzsimmons}, {Haswell}, {Hodgkin},
+  {Horne}, {Kane}, {Keenan}, {Maxted}, {Norton}, {Osborne}, {Parley}, {Ryans},
+  {Smalley}, {Wheatley}, \& {Wilson}}]{Pollacco06}
+{Pollacco}, D.~L., {Skillen}, I., {Collier Cameron}, A., {et~al.} 2006, \pasp,
+  118, 1407
+
+\bibitem[{{Reichart} {et~al.}(2005){Reichart}, {Nysewander}, {Moran},
+  {Bayliss}, {Foster}, {Clemens}, {Prise}, {Evans}, {Salmonson}, {Trammell]},
+  {Carney}, {Keohane}, \& {Gotwals}}]{Reichart05}
+{Reichart}, D., {Nysewander}, M., {Moran}, J., {et~al.} 2005, Il Nuovo Cimento
+  C
+
+\bibitem[{{Rieder} \& {Kenworthy}(2016)}]{Rieder16}
+{Rieder}, S. \& {Kenworthy}, M.~A. 2016, \aap, 596, A9
+
+\bibitem[{{Samus} {et~al.}(2017){Samus}, {Kazarovets}, {Durlevich}, {Kireeva},
+  \& {Pastukhova}}]{Samus17}
+{Samus}, N.~N., {Kazarovets}, E.~V., {Durlevich}, O.~V., {Kireeva}, N.~N., \&
+  {Pastukhova}, E.~N. 2017, Astronomy Reports, 61, 80
+
+\bibitem[{{Tang} {et~al.}(2013){Tang}, {Grindlay}, {Los}, {Simcoe}, \&
+  {Servillat}}]{Tang2013}
+{Tang}, S., {Grindlay}, J., {Los}, E., {Simcoe}, R., \& {Servillat}, M. 2013,
+  Publications of the Astronomical Society of the Pacific, 125, 857
+
+\bibitem[{{Teachey} \& {Kipping}(2018)}]{Teachey18}
+{Teachey}, A. \& {Kipping}, D.~M. 2018, \aj, 155, 36
+
+\bibitem[{{Teachey} {et~al.}(2018){Teachey}, {Kipping}, \&
+  {Schmitt}}]{Kipping18}
+{Teachey}, A., {Kipping}, D.~M., \& {Schmitt}, A.~R. 2018, \aj, 155, 36
+
+\bibitem[{{van Werkhoven} {et~al.}(2014){van Werkhoven}, {Kenworthy}, \&
+  {Mamajek}}]{vanWerkhoven14}
+{van Werkhoven}, T.~I.~M., {Kenworthy}, M.~A., \& {Mamajek}, E.~E. 2014,
+  \mnras, 441, 2845
+
+\bibitem[{{Ward} \& {Canup}(2010)}]{Ward10}
+{Ward}, W.~R. \& {Canup}, R.~M. 2010, \aj, 140, 1168
+
+\bibitem[{{Zacharias} {et~al.}(2010){Zacharias}, {Finch}, {Girard}, {Hambly},
+  {Wycoff}, {Zacharias}, {Castillo}, {Corbin}, M., {Dutta}, {Gaume}, {Gauss},
+  {Germain}, {Hall}, {Hartkopf}, {Hsu}, {Holdenried}, {Makarov}, {Martines},
+  {Mason}, {Monet}, {Rafferty}, {Rhodes}, {Siemers}, {Smith}, {Tilleman},
+  {Urban}, {Wieder}, {Winter}, \& {Young}}]{Zacharias10}
+{Zacharias}, N., {Finch}, C., {Girard}, T., {et~al.} 2010, \aj, 139, 2184
+
+\bibitem[{{Zanazzi} \& {Lai}(2017)}]{Zanazzi17}
+{Zanazzi}, J.~J. \& {Lai}, D. 2017, \mnras, 464, 3945
+
+\end{thebibliography}

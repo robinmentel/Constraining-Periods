@@ -56,17 +56,6 @@ for (i, line) in enumerate(body):
     light_SW[i] = t.mjd, float(words[10]), float(words[11])
 print ("Data from SuperWASP: %d" % len(light_SW))
 
-# ... KELT:
-file = open(folder + 'photometry/KELT/KS25C041156_J1406_TFA.txt')
-body = file.readlines()[1:]
-kelt_correction = 2.471
-light_K = np.zeros((len(body), 3))
-for (i, line) in enumerate(text):
-    words = line.split()
-    t = Time(float(words[0]), format='jd', scale='utc')
-    light_K[i] = t.mjd, float(words[1]) - kelt_correction, float(words[2])
-print  ("Data from KELT: %d" % len(light_K))
-
 # ... DASCH:
 pre_Dasch = parse(folder + 'photometry/DASCH/plotshort_APASS_J140747.9-394543.xml') #.gz')
 table_Dasch = pre_Dasch.get_first_table()
@@ -131,10 +120,6 @@ ax11.errorbar(data[:,0], data[:,1], data[:,2], c="r", ms=6, mec="k", mew=1.2, fm
 source = light_SO
 data = source[(source[:,2]<=0.3) & (abs(source[:,1]-np.mean(source[:,1]))<0.25)]
 ax11.errorbar(data[:,0], data[:,1], data[:,2], c="g", ms=6, mec="k", mew=1.2, fmt="o", ls="none", alpha=0.5, capsize=0, label="Sonneberg (~B)")
-
-source = light_K
-data = source[(source[:,2]<=0.3) & (abs(source[:,1]-np.mean(source[:,1]))<0.25)]
-ax21.errorbar(data[:,0], data[:,1], data[:,2], c="r", ms=6, mec="k", mew=0.5, fmt="^", ls="none", alpha=0.5, capsize=0, label="KELT (instrumental, shifted)")
 
 source = light_AA
 data = source[(source[:,2]<=0.3) & (abs(source[:,1]-np.mean(source[:,1]))<0.25)]

@@ -1,21 +1,23 @@
 import numpy as np
+
 from astropy.io.votable import parse
 from astropy.io import ascii
 from astropy.time import Time
+
 import matplotlib.pyplot as plt
 import matplotlib as mpl
-label_size = 14
+
+label_size=14
 mpl.rcParams['xtick.labelsize'] = label_size
 mpl.rcParams['ytick.labelsize'] = label_size
 %matplotlib inline
 
-# Give the location of the folder
-folder = "C:/Users/Me/Documents/J1407_code/"
+folder = "~/mentel_etal_2018/photometry/"
 
-# Read in data from...
+### Read in data from...
 
 # ... PROMPT:
-file = open(folder + 'photometry/PROMPT/PROMPT_J1407.dat')
+file = open(folder + 'PROMPT/PROMPT_J1407.dat')
 body = file.readlines()[1:]
 light_P = np.zeros((len(body), 3))
 for (i, entry) in enumerate(body):
@@ -25,7 +27,7 @@ for (i, entry) in enumerate(body):
 print ("Data from PROMPT: %d" % len(light_P))
 
 # ... Sonneberg:
-body = ascii.read(folder + "photometry/Sonneberg/sonneberg.txt")
+body = ascii.read(folder + "Sonneberg/sonneberg.txt")
 light_SO = np.zeros((len(body), 3))
 for i, plate in enumerate(body):
     time_d = str(float(plate[0])*10**4 + float(plate[1])*10**2 + float(plate[2]))[:-2]
@@ -36,7 +38,7 @@ for i, plate in enumerate(body):
 print ("Data from Sonneberg Observatory: %d" % len(light_SO))
 
 # ... AAVSO:
-file = open(folder + 'photometry/AAVSO/aavsodata_J_2017_11_11.txt', 'r')
+file = open(folder + 'AAVSO/aavsodata_J_2017_11_11.txt', 'r')
 body = file.readlines()[1:]
 light_AA = np.zeros((len(body), 3))
 for (i, line) in enumerate(body):
@@ -47,7 +49,7 @@ print ("Data from AAVSO: %d" % len(light_AA))
             
 # ... SuperWASP:
 mean_sw = 12.36
-file = open(folder + 'photometry/SuperWASP/1SWASP_J140747.93-394542.6_lc.txt', 'r')
+file = open(folder + 'SuperWASP/SuperWASP_1SWASP_J140747.93-394542.6_lc.txt', 'r')
 body = file.readlines()[22:]
 light_SW = np.zeros((len(body), 3))
 for (i, line) in enumerate(body):
@@ -57,7 +59,7 @@ for (i, line) in enumerate(body):
 print ("Data from SuperWASP: %d" % len(light_SW))
 
 # ... DASCH:
-pre_Dasch = parse(folder + 'photometry/DASCH/plotshort_APASS_J140747.9-394543.xml') #.gz')
+pre_Dasch = parse(folder + 'DASCH_DR5/plotshort_APASS_J140747.9-394543.xml') #.gz')
 table_Dasch = pre_Dasch.get_first_table()
 light_D = np.zeros((len([x for x in table_Dasch.array if (str(x[9])[2:5] != "dsr") & ((str(x[9])[2:5] != "dsy"))]), 3))
 i = 0
@@ -69,7 +71,7 @@ for x in table_Dasch.array:
 print ("Data from DASCH DR5 in J-Blue: " + str(len(light_D)))
 
 # ... Bamberg Observatory:
-body = open(folder + 'photometry/Bamberg/J1407_results-bamberg.txt', "r").readlines()[1:]
+body = open(folder + 'APPLAUSE_bamberg/bamberg-results_edit.txt', "r").readlines()[1:]
 i = 0
 for line in body:
     words = line.split()
@@ -86,6 +88,15 @@ for line in body:
         i+=1
 print ("Data from Bamberg in Johnson Blue: " + str(len(light_B)))
 
+# ... KELT:
+file = open(folder + 'KELT/KELT-KS25C041156_J1406_TFA.txt')
+body = file.readlines()[1:]
+light_K = np.zeros((len(body), 3))
+for (i, line) in enumerate(body):
+    words = line.split()
+    t = Time(float(words[0]), format='jd', scale='utc')
+    light_K[i]= t.mjd, float(words[1])-2.4, float(words[2])
+print ("Data from KELT: " + str(len(light_K)))
 
 # Approximate time of the begin and end of the transit
 t_begin = 54192
@@ -107,7 +118,6 @@ ax11 = fig.add_subplot(211)
 ax12 = ax11.twiny()
 ax21 = fig.add_subplot(212)
 ax22 = ax21.twiny()
-
 
 source = light_D
 data = source[(source[:,2]<=0.3) & (abs(source[:,1]-np.mean(source[:,1]))<0.25)]
@@ -137,6 +147,10 @@ source = light_P
 data = source[(source[:,2]<=0.3) & (abs(source[:,1]-np.mean(source[:,1]))<0.25)]
 ax21.errorbar(data[:,0], data[:,1], data[:,2], c="y", ms=6, mec="k", mew=1.5, fmt="v", ls="none", alpha=0.5, capsize=0, label="PROMPT (V)")
 
+source = light_K
+data = source[(source[:,2]<=0.3) & (abs(source[:,1]-np.mean(source[:,1]))<0.25)]
+ax21.errorbar(data[:,0], data[:,1], data[:,2], c="r", ms=6, mec="k", mew=1.5, fmt="v", ls="none", alpha=0.5, capsize=0, label="KELT (~V)")
+
 ax11.set_ylim([14.4,13.])
 ax21.set_ylim([13.4,12.])
 
@@ -156,8 +170,6 @@ ax22.invert_yaxis()
 ax11.legend(loc=0)
 ax21.legend(loc=4)
 
-# Careful: PDF contains high number of data points! May take a while to load.
 # plt.savefig(folder + "figure_2/figure_2.pdf")
 # plt.savefig(folder + "figure_2/figure_2.png")
-plt.show()
 plt.close
